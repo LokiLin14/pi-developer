@@ -11,6 +11,7 @@ You are working with Pi Developer, a repository that documents the user's softwa
 - `.pi/settings.json`: project configuration and the interactive-subagents dependency.
 - `templates/`: starting points for decision, task, and plan documents.
 - `docs/`: decisions, tasks, plans, and evidence created as real work is selected; do not generate empty placeholder documents.
+- `workspace/`: clone repositories being worked on into `workspace/<repo-name>/`; reuse existing checkouts when appropriate. Treat each checkout as a separate repository: run Git commands there and keep its decisions, tasks, and plans in its own `docs/` directory.
 - `developer.sh`: launcher for project-local setup and session storage in `.pi-session/`.
 
 Paths below are relative to the target repository root, not the skill directory.
