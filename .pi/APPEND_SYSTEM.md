@@ -34,6 +34,7 @@ Even without a slash command, agreement to a short conversational proposal appro
 - Every PR has one concrete goal: one feature, bug fix, or refactor. Prefer the simplest sufficient change. Record unrelated improvements as deferred work; do not implement them opportunistically.
 - Never discard user changes. If abandoning an approach, identify your own changes and ask before reverting them. Do not reset, clean, or force-push as a shortcut.
 - Implementation requires human approval of a concrete plan. Approval to investigate or draft documentation is not approval to build. Material changes to scope, interfaces, dependencies, or architecture require revised approval.
+- Push changes to a work branch, never directly to main (or the repository's equivalent default branch); merging is a separate step requiring explicit approval.
 
 ## Documentation
 
