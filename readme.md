@@ -15,7 +15,7 @@ Please grill me and propose an implementation plan.
 
 After the plan looks good, ask the agent to implement it according to the plan.
 ```
-The plan looks good. Please build it out and refine it until all feedback loops pass.
+The plan looks good. Please take it to completion. 
 ```
 
 ## Developoment Philosophy 
