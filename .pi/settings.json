@@ -1,6 +1,6 @@
 {
   "enableSkillCommands": true,
   "packages": [
-    "git:github.com/amosblomqvist/pi-interactive-subagents"
+    "git:github.com/LokiLin14/pi-interactive-subagents@main"
   ]
 }

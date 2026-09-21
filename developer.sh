@@ -5,10 +5,10 @@ set -euo pipefail
 cd -- "$(dirname -- "${BASH_SOURCE[0]}")"
 
 # Keep the extension project-local, matching .pi/settings.json.
-subagents_dir=".pi/git/github.com/amosblomqvist/pi-interactive-subagents"
+subagents_dir=".pi/git/github.com/LokiLin14/pi-interactive-subagents"
 if [[ ! -f "$subagents_dir/package.json" ]]; then
   echo "Installing interactive subagents..."
-  pi install -l git:github.com/amosblomqvist/pi-interactive-subagents
+  pi install -l git:github.com/LokiLin14/pi-interactive-subagents@main
 fi
 
 # Reuse a fixed session so calling ./developer.sh resumes the session.

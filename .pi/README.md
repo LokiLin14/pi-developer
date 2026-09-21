@@ -8,9 +8,15 @@ Open pi in the repository root and trust the project when prompted. Project pack
 tmux new -A -s pi-developer 'pi'
 ```
 
-`settings.json` declares the same `git:github.com/amosblomqvist/pi-interactive-subagents` dependency used by `~/Git/Personal/pi-theory-tutor/.pi/settings.json` (the tutor's actual location on this machine). It supplies the `scout`, `researcher`, and `worker` agents; this setup does not need the tutor's diagram agents or teaching extensions. No tutor model/provider defaults are copied.
+`settings.json` and `developer.sh` use `git:github.com/LokiLin14/pi-interactive-subagents@main`, our maintained fork. It supplies `scout`, `researcher`, and `worker` without bundled model pins. Fresh subagents use Pi's normal startup settings/scopes, not necessarily the parent's currently selected model. Explicit spawn overrides and custom profile models still take precedence. Model-less launches also use Pi's thinking defaults; resumed children may retain their earlier model.
 
-The dependency is unpinned, matching the tutor. Its bundled agent models need their own provider credentials, independently of the main session's model. Inspect available profiles with `subagents_list`; choose an available model override when spawning if needed. Without tmux or working subagents, the skills offer an explicit main-session fallback rather than pretending agents ran. Third-party extensions execute code with your permissions: review the package before trusting/installing it.
+`@main` is a moving branch reference, not an immutable commit. The launcher installs a missing package but does not refresh an existing checkout. Pi treats explicit refs as pinned for automatic updates; to refresh main explicitly, run from this repository:
+
+```sh
+pi install -l git:github.com/LokiLin14/pi-interactive-subagents@main
+```
+
+On the validated Pi version, this fetches the ref for an existing checkout. Restart Pi afterward and record the installed revision when investigating behavior. Saved credentials must still work, and providers defined only by extensions excluded from a child's tool sandbox may be unavailable. Inspect profiles with `subagents_list`; do not assume a profile's existence proves provider access. Without tmux or working subagents, the skills offer an explicit main-session fallback rather than pretending agents ran. Third-party extensions execute code with your permissions: review the package before trusting/installing it.
 
 ## Commands
 
