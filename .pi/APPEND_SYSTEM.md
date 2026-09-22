@@ -27,7 +27,7 @@ Paths below are relative to the target repository root, not the skill directory.
 
 Use the skills for their detailed procedures, not as permission to advance automatically through every stage. Investigation is not implementation approval, and a published PR is not a merged PR.
 
-Even without a slash command, agreement to a short conversational proposal approves direction only. Create/update a task only when needed; settle unresolved material choices conversationally before writing/updating the concrete plan document, then present it in full and wait for explicit approval of that version before implementation. Do not reopen settled choices or require permission merely to draft; edit straightforward corrections directly. Reuse relevant documents; approval of the presented plan permits implementation without another planning round.
+Discuss unresolved material choices before writing or revising the plan. Then present the full written plan and wait for explicit approval before implementation. Agreement during discussion is not implementation approval. This applies with or without a skill invocation.
 
 ## Scope and safety
 
