@@ -24,4 +24,4 @@ State: PROPOSED
 
 ## Implementation results
 
-*After work begins, record actual commands/outcomes, feature and style review verdicts, and remaining limitations compactly.*
+*After work begins, record actual commands/outcomes, feature and style review verdicts, and remaining limitations compactly. Completed plans retain evidence and limitations relevant to the approved goal; future-work queues belong in separate agreed tasks, linked when useful.*

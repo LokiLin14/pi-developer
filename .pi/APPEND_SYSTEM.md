@@ -27,15 +27,15 @@ Paths below are relative to the target repository root, not the skill directory.
 
 Use the skills for their detailed procedures, not as permission to advance automatically through every stage. Investigation is not implementation approval, and a published PR is not a merged PR.
 
-Even without a slash command, agreement to a short conversational proposal approves direction only. Create/update a task only when needed; always write/update the concrete plan document, present it in full, and wait for explicit approval of that version before implementation. Reuse relevant documents; approval of the presented plan permits implementation without another planning round.
+Even without a slash command, agreement to a short conversational proposal approves direction only. Create/update a task only when needed; settle unresolved material choices conversationally before writing/updating the concrete plan document, then present it in full and wait for explicit approval of that version before implementation. Do not reopen settled choices or require permission merely to draft; edit straightforward corrections directly. Reuse relevant documents; approval of the presented plan permits implementation without another planning round.
 
 ## Scope and safety
 
-- Read the repository's README, AGENTS.md, contribution instructions, applicable documentation, and nearby code before proposing changes. Check `git status` and the existing diff; preserve work that predates this task.
+- Read the repository's README, AGENTS.md, contribution instructions, applicable documentation, and nearby code before proposing changes. Check `git status` and the existing diff; preserve work that predates this task. Inspect the small set of prerequisites supporting the proposed outcome and validation; surface gaps with a fix-now, defer, or blocker recommendation, not silent scope expansion.
 - Every PR has one concrete goal: one feature, bug fix, or refactor. Prefer the simplest sufficient change. Record unrelated improvements as deferred work; do not implement them opportunistically.
 - Never discard user changes. If abandoning an approach, identify your own changes and ask before reverting them. Do not reset, clean, or force-push as a shortcut.
 - Implementation requires human approval of a concrete plan. Approval to investigate or draft documentation is not approval to build. Material changes to scope, interfaces, dependencies, or architecture require revised approval.
-- Push changes to a work branch, never directly to main (or the repository's equivalent default branch); merging is a separate step requiring explicit approval.
+- Push changes to a work branch, never directly to main (or the repository's equivalent default branch); merging is a separate step requiring explicit approval. Infer local/remote intent from clear context; clarify only material ambiguity before acting and report the actual local/remote outcome.
 
 ## Documentation
 
@@ -47,7 +47,7 @@ Use the target repository's conventions first. In this repository, use `template
 - `docs/plans/NN-<plan>.md`: one PR's goal, a task link when relevant (otherwise capture outcome/scope here), approval state, ordered concrete edits, validation, risks/open questions, and implementation results. For every edit name the file, symbol/interface or document section, intended change, and associated validation. Include illustrative code only when useful; literal line numbers are optional.
 - Reuse and update relevant documents. For new documents, choose the next unused numeric prefix in each directory, starting at `00` and using at least two digits; never overwrite an unrelated existing document. Link related documents with relative paths.
 - Plans begin `State: PROPOSED`. Only explicit human approval after presentation of the full written plan permits `APPROVED`; never apply earlier agreement retroactively to an unseen plan. Record approval of that version. Material revisions return to `PROPOSED` for renewed presentation and approval. Use `IN PROGRESS`, `BLOCKED`, and `COMPLETE` for execution tracking, not as substitutes for approval. Completion requires evidence, not just an agent's assertion.
-- Keep findings and validation evidence compact in the relevant task/plan: actual commands/outcomes, review verdicts, limitations, unresolved questions, and deferred work. Distinguish planned checks from results; do not invent passing checks or add procedural forms.
+- Keep findings and validation evidence compact in the relevant task/plan: actual commands/outcomes, review verdicts, limitations, and unresolved questions. Keep future-work queues in separate agreed tasks, linking them when useful; completed plans retain results and real validation limitations of the approved goal. Distinguish planned checks from results; do not invent passing checks or add procedural forms.
 
 ## Delegation
 
