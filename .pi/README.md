@@ -33,6 +33,6 @@ Typical flow: `/skill:grill` → `/skill:check` for uncertain assumptions → pr
 
 Documentation follows the root README and `templates/`: discuss first, then record agreed choices and tradeoffs in decisions when needed, and outcomes, completion checks, and exclusions in tasks when useful. Neither needs approval statuses, and a task need not invent a decision. Plans propose concrete ordered edits, validation, and risks for one PR before building.
 
-Even without a slash command, agreement to a short conversational proposal approves direction only. Create/update a task only when needed; always write/update the concrete plan document, present it in full, and wait for explicit approval of that version. Reuse relevant documents; approval of the presented plan permits implementation without another planning round.
+Discuss unresolved material choices before writing or revising the plan. Then present the full written plan and wait for explicit approval before implementation. Agreement during discussion is not implementation approval. This applies with or without a skill invocation; see [shared guidance](APPEND_SYSTEM.md) and [grill](skills/grill/SKILL.md) for details.
 
 Plans start `State: PROPOSED`. Only explicit approval after presentation permits `APPROVED`; earlier agreement never retroactively approves an unseen plan. Material revisions return to `PROPOSED` for renewed presentation and approval. `IN PROGRESS`, `BLOCKED`, and `COMPLETE` track execution, not approval.
